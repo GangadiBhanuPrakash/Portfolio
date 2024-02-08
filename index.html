@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portifolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/fe21f11119.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+               <img src="images/logo.png" class="logo">   
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Projects</a></li>
+                    
+                    <li><a href="#contact">Contact</a></li> 
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Full Stack Developer</p>
+                <h1>Hi, I'm <span>Bhanu Prakash</span> from Kandukur</h1>
+            </div>
+        </div>
+    </div> 
+    
+    <!-------about------->
+    <div id="about" >
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">Professional Summary</h1>
+                    <p> Recent graduate with a strong foundation in Full Stack Development, specializing 
+                        in Java programming. Eager to apply theoretical knowledge gainedthrough academic 
+                        projects to real-world challenges. Skilled in both front-end and back-end technologies,
+                        with a focus on creating efficient and user-friendly web applications. A quick learner 
+                        with a passion for staying current with industry trends. Excited to contribute enthusiasm,
+                        adaptability, and a collaborative spirit to a dynamic development team.</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('Education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="Skills">
+                            <ul>
+                                <li><span>PROGRAMMING</span><br>Java /HTML /CSS /JavaScript</li>
+                                <li><span>DATABASES</span><br>MySQL</li>
+                                <li><span>LIBRARIES/FRAMEWORKS</span><br>Spring /SpringBoot /Hibernate /Thymeleaf /ReactJs</li>
+                                <li><span>TOOLS/PLATFORMS</span><br>Maven /Postman /Git</li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents" id="Experience">
+                            <ul>
+                                <li><span>July 2023-feb 2024</span><br>Full Stack Development Intern at KodNest</li>
+                                
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents" id="Education">
+                            <ul>
+                                <li><span>2019-2023</span><br>B.Tech in IT From ALIET</li>
+                                <li><span>2017-2019</span><br>Intermediate (MPC) from Sri Pratibha</li>
+                                <li><span>2016-2017</span><br>SSC from Sri Gurudatta</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!------services------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Book Management System</h2>
+                    <p>Developed a Book Management System utilizing Java Spring Boot, Thymeleaf, and Spring Data JPA. 
+                       The application can perform all the CRUD operations. Enabled efficient tracking, categorization,
+                       and administration of books. Created frontend using Thymeleaf. Implemented an organized and 
+                       maintainable codebase through MVC architecture.                
+                    </p>
+                    <a href="#">Learn more</a> 
+                </div>
+                <div> 
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>BASIC FORMV ALIDATION</h2>
+                    <p>Created a user-friendly form checker using HTML and CSS. Designed a good-looking form that
+                       works well and Checked everything thoroughly to make sure it works smoothly. Authorize
+                       users for login based on the information provided during registration. </p>    
+                    <a href="#">Learn more</a> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------portfolio
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+------->
+
+<!-------contact----->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p>  <i class="fa-sharp fa-solid fa-paper-plane"></i>  bhanugangadi@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>  9347527431</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/bhanuprakashgangadi/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/GangadiBhanuPrakash"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/bhanu_prakash_victory/"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <br>
+                    <a href="images/ResumeBhanuPrakash.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div>
+
+        </div>
+        <div class="copyright">
+            <marquee><p>Bhanu Prakash Portfolio <i class="fas fa-heart"></i></p></marquee>
+        </div>
+    </div>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links") 
+        var tabcontents = document.getElementsByClassName("tab-contents")   
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+
+    <script>
+        var sidemenu=document.getElementById("sidemenu")
+        function openmenu(){
+            sidemenu.style.right="0"
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px"
+        }
+    </script>
+
+    
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyjtjsIHk6-tbsBaDVPMx3DCnDMfYypJYxK2vYeqigw9bYOjSCallojDjXmv85JnpK4/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message sent successfully"
+            setTimeout(function(){
+            msg.innerHTML=""
+        },5000)
+        form.reset()
+    })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
